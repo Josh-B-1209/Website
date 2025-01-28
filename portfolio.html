@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Brooks - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbarlogo">JOSHUA BROOKS</div>
+        <div class="navbarcontent">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="portfoliotitle">My Portfolio</h1>
+
+      <!-- Bambu Lab X1 Carbon Chamber Heater Driver -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="Bambu Lab X1 Carbon Chamber Heater Driver"
+          src="3D Models\chamber Heater.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">
+            Bambu Lab X1 Carbon Chamber Heater Driver
+          </h2>
+          <p class="maintext">
+            When Bambu lab released the X1 Carbon in 2022 the 3d printing
+            industry was taken by storm with it's features which at the time
+            seemed to good to be true, lidar first layer inspection, 20k mm^2
+            acceleration and tk Fast forward to present day these features have
+            now become the standard and Bambu Lab has redefined what is
+            considered a quality 3d printer. However as mentioned by Dr Tau
+            himself the CEO of Bambu Lab, "the X1 Carbon is far from perfect".
+            That's when Joshua Wise from "X1 Enhanced" formally known as "X1
+            Plus" took it upon himself to launch custom, open source firmware in
+            2023 for the X1 series printers. It doesn't replace the existing
+            firmware but rather acts as an additional firmware layer running
+            alongside the existing firmware. It gave X1 printer owners long
+            requested features such as enhanced network security, password
+            protection, visualisation of the autobed leveling data, custom
+            splash screen images and many, many more features.
+          </p>
+          <p class="maintext">
+            Recently this open source project has expanded with the addition of
+            new hardware related features through the X1 tk, such as ethernet,
+            external camera shutter control, rgb led indicators and USB ports.
+            As this is open source and having had author's Chamber Heater
+            modification in mind I developed a chamber heater controller.
+            Featuring an AC power input for fast heat up and no modifications to
+            the printers existing switch mode power supply, i2C flash IC for the
+            main carrier printed circuit board(PCB) to automatically detect what
+            add on PCB has been connected to a port as well as optocouplers for
+            signal isolation and therefore enhanced safety. This drop in PCB
+            enables the printer to precisely control the build chamber
+            temperature through G code sent from the slicer software, enabling
+            the printer to reliably print cracking prone materials such as ABS
+            (), PC (Poly Carbonate) or PA (Nylon). Together with authors "Bento
+            Box" chamber filter you effectively have an X1 E printer for half
+            the price.
+          </p>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD, Altium</li>
+                <li>CAD - Autodesk Fusion</li>
+                <li>Mixed Signal Hardware Design</li>
+                <li>Control System Design</li>
+                <li>AC Power Control, Zero Cross Detection</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>
+                  A actively heated 3D printer build Chamber for R15 000 on
+                  avarage cheaper.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dual Channel JBC Controller -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="Dual Channel JBC Controller"
+          src="3D Models\Soldering Station V2.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">Dual Channel JBC Controller</h2>
+          <p class="maintext">
+            JBC, a premium soldering station brand known for there fast heat up
+            time, large, direct drive cartridge catalog comprising of special
+            purpose and or geometry cartridges, build quality, ergonomics and
+            high thermal load capacity. Being considered a premium brand however
+            there products are quite expensive, the good news however is that
+            all that gives there stations there high preformace is in there
+            cartridges which for there quality are reasonably priced especially
+            when only a handful of different geometries are needed.
+          </p>
+          <model-viewer
+            class="modelviewer"
+            alt="Bambu Lab X1 Carbon Chamber Heater Driver"
+            src="3D Models\JBC Station PCB.glb"
+            ar
+            environment-image="shared-assets/environments/moon_1k.hdr"
+            poster="shared-assets/models/NeilArmstrong.webp"
+            shadow-intensity="1"
+            camera-controls
+            touch-action="pan-y"
+          >
+          </model-viewer>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD, Altium Designer</li>
+                <li>CAD - Autodesk Fusion</li>
+                <li>Matlab</li>
+                <li>Mixed Signal Hardware Design</li>
+                <li>AC Power Control, Zero Cross Detection</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CNC Touch Probe -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="CNC Touch Probe"
+          src="3D Models\Touch Probe.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">CNC Touch Probe</h2>
+          <p class="maintext">
+            JBC, a premium soldering station brand known for there fast heat up
+            time, large, direct drive cartridge catalog comprising of special
+            purpose and or geometry cartridges, build quality, ergonomics and
+            high thermal load capacity. Being considered a premium brand however
+            there products are quite expensive, the good news however is that
+            all that gives there stations there high preformace is in there
+            cartridges which for there quality are reasonably priced especially
+            when only a handful of different geometries are needed.
+          </p>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+                <li>Mixed Signal Hardware Design</li>
+                <li>AC Power Control</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+                <li>Mixed Signal Hardware Design</li>
+                <li>AC Power Control</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RTK Base Station -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="RTK Base Station"
+          src="3D Models\tripod_v2.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">RTK Base Station</h2>
+          <p class="maintext">
+            JBC, a premium soldering station brand known for there fast heat up
+            time, large, direct drive cartridge catalog comprising of special
+            purpose and or geometry cartridges, build quality, ergonomics and
+            high thermal load capacity. Being considered a premium brand however
+            there products are quite expensive, the good news however is that
+            all that gives there stations there high preformace is in there
+            cartridges which for there quality are reasonably priced especially
+            when only a handful of different geometries are needed.
+          </p>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+                <li>CAD - Fusion</li>
+                <li>Power Over Ethernet</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+                <li>CAD - Fusion</li>
+                <li>Sensor Data Fusion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Robotic Manipulator -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="Robotic Manipulator"
+          src="3D Models\Robotic Manipulator.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">Robotic Manipulator</h2>
+          <p class="maintext">
+            JBC, a premium soldering station brand known for there fast heat up
+            time, large, direct drive cartridge catalog comprising of special
+            purpose and or geometry cartridges, build quality, ergonomics and
+            high thermal load capacity. Being considered a premium brand however
+            there products are quite expensive, the good news however is that
+            all that gives there stations there high preformace is in there
+            cartridges which for there quality are reasonably priced especially
+            when only a handful of different geometries are needed.
+          </p>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD, Altium Designer</li>
+                <li>CAD - Autodesk Fusion</li>
+                <li>Control System Design</li>
+                <li>Matlab - Simscape Multibody</li>
+                <li>Mixed Signal Hardware Design</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>Referal from the Project Manager at Resolute Robotics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desoldering Module -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="Desoldering Module"
+          src="3D Models\Assembly11.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">Desoldering Module</h2>
+          <p class="maintext">
+            JBC, a premium soldering station brand known for there fast heat up
+            time, large, direct drive cartridge catalog comprising of special
+            purpose and or geometry cartridges, build quality, ergonomics and
+            high thermal load capacity. Being considered a premium brand however
+            there products are quite expensive, the good news however is that
+            there high preformace is a result of there cartridge design, which
+            for there quality, are reasonably priced especially when only a
+            handful of different geometries are needed.
+          </p>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD, Altium Designer</li>
+                <li>CAD - Autodesk Fusion</li>
+                <li>Mixed Signal Hardware Design</li>
+                <li>Pneumatic System Design</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>A quiet vacumm generator with a high inital vacumm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plant Care System -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="Plant Care System"
+          src="shared-assets/models/NeilArmstrong.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">Plant Care System</h2>
+          <p class="maintext">
+            JBC, a premium soldering station brand known for there fast heat up
+            time, large, direct drive cartridge catalog comprising of special
+            purpose and or geometry cartridges, build quality, ergonomics and
+            high thermal load capacity. Being considered a premium brand however
+            there products are quite expensive, the good news however is that
+            all that gives there stations there high preformace is in there
+            cartridges which for there quality are reasonably priced especially
+            when only a handful of different geometries are needed.
+          </p>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+                <li>CAD - Autodesk Fusion</li>
+                <li>Mixed Signal Hardware Design</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+                <li>CAD - Fusion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inverted Pendulum -->
+      <div class="project">
+        <model-viewer
+          class="modelviewer"
+          alt="Inverted Pendulum"
+          src="shared-assets/models/NeilArmstrong.glb"
+          ar
+          environment-image="shared-assets/environments/moon_1k.hdr"
+          poster="shared-assets/models/NeilArmstrong.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        >
+        </model-viewer>
+        <div class="project-content">
+          <h2 class="portfoliotitle">Inverted Pendulum</h2>
+          <p class="maintext">
+            JBC, a premium soldering station brand known for there fast heat up
+            time, large, direct drive cartridge catalog comprising of special
+            purpose and or geometry cartridges, build quality, ergonomics and
+            high thermal load capacity. Being considered a premium brand however
+            there products are quite expensive, the good news however is that
+            all that gives there stations there high preformace is in there
+            cartridges which for there quality are reasonably priced especially
+            when only a handful of different geometries are needed.
+          </p>
+          <div class="skills-outcomes">
+            <div>
+              <h3 class="skillsheading">Skills Exercised:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+                <li>CAD - Autodesk Fusion, Onshape</li>
+                <li>Control System Design</li>
+                <li>Kalfman Filter Implementation</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="skillsheading">Outcomes:</h3>
+              <ul class="skillstext">
+                <li>ECAD - KiCAD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footerbox">
+      <div class="container">
+        <div class="footerrighttext">
+          <h1f>Get In Touch:</h1f>
+          <div>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="authorbar">
+      <div class="author">
+        <p>&copy; 2025 Joshua Brooks. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Brooks - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">JOSHUA BROOKS</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video autoplay loop muted playsinline>
+          <source src="Videos/VID20230218221542_1.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-content">
+          <h1>Welcome to My Portfolio</h1>
+          <p>Discover my work and passion for design</p>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <img
+              src="images/bio-photo.jpg"
+              alt="Joshua Brooks"
+              class="about-image"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Aperiam, saepe provident dolorem a
+              quaerat quo error facere nihil deleniti eligendi ipsum adipisci,
+              fugit, architecto amet asperiores doloremque deserunt eum nemo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2>Testimonials</h2>
+          <div class="testimonial-slider">
+            <!-- Testimonial slides will be inserted here by JavaScript -->
+          </div>
+        </div>
+        <div class="testimonial mySwiper">
+          <div class="testi-content swiper-wrapper">
+            <div class="slide swiper-slide">
+              <div class="swiper-button-next nav-btn"></div>
+              <div class="swiper-button-prev nav-btn"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="Testimonial Bar\js\swiper-bundle.min.js"></script>
+      <script src="Testimonial Bar\js\script.js"></script>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <h3>Get In Touch:</h3>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Joshua Brooks. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
