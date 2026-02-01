@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Maintenance - Joshua Brooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: #1e1e1e;
+        color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .maintenance-container {
+        max-width: 600px;
+        text-align: center;
+        animation: fadeIn 1s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .icon-wrapper {
+        margin-bottom: 30px;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .icon-wrapper i {
+        font-size: 80px;
+        color: #4a90e2;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #4a90e2;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #d0d0d0;
+        margin-bottom: 15px;
+      }
+
+      .status-message {
+        background-color: rgba(74, 144, 226, 0.1);
+        border-left: 4px solid #4a90e2;
+        padding: 20px;
+        margin: 30px 0;
+        border-radius: 4px;
+      }
+
+      .contact-info {
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(74, 144, 226, 0.3);
+      }
+
+      .contact-info h2 {
+        font-size: 1.3rem;
+        color: #4a90e2;
+        margin-bottom: 20px;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+
+      .social-links a {
+        color: #ffffff;
+        font-size: 1.8rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+        display: inline-block;
+      }
+
+      .social-links a:hover {
+        color: #4a90e2;
+        transform: translateY(-3px);
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #d0d0d0;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .icon-wrapper i {
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .social-links a {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maintenance-container">
+      <div class="icon-wrapper">
+        <i class="fas fa-tools"></i>
+      </div>
+
+      <h1>Website Under Maintenance</h1>
+
+      <p>
+        I'm currently performing scheduled maintenance and updates to improve
+        your experience. The site will be back online shortly.
+      </p>
+
+      <div class="status-message">
+        <p style="margin: 0;">
+          <strong>Expected Return:</strong> Updates are in progress. Please check
+          back soon!
+        </p>
+      </div>
+
+      <p>
+        Thank you for your patience and understanding while I work to make the
+        site better for you.
+      </p>
+
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/joshua_brooks5241/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://x.com/_Josh_12_B"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/joshua-brooks-7a9aba24a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://discordapp.com/users/403655032865816591"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Discord"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Joshua Brooks. All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
